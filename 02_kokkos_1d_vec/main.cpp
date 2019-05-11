@@ -185,8 +185,12 @@ void run_sim() {
 }
 
 int main(int argc, char **argv) {
-  parse_args(argc, argv);
-  load_ics();
-  run_sim();
+  Kokkos::initialize(argc, argv);
+  {
+    parse_args(argc, argv);
+    load_ics();
+    run_sim();
+  }
+  Kokkos::finalize();
   return 0;
 }
