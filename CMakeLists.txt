@@ -15,3 +15,5 @@ add_subdirectory (01_serial)
 add_subdirectory (02_kokkos_1d_view)
 
 add_subdirectory (04_kokkos_1d_view_tmp_storage)
+add_subdirectory (05_kokkos_2d_view)
+add_subdirectory (06_kokkos_2d_view_layout_left)
