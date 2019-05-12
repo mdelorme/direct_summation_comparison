@@ -164,11 +164,10 @@ void run_sim() {
 
   dump_data(0);
   
-  const int dump_freq = 20;
   int dump_ite = dump_freq;
   int dump_counter = 1;
 
-  for (int i=0; i < max_ite; ++i) {
+  for (int ite=0; ite < max_ite; ++ite) {
     update_positions();
     compute_acceleration();
     update_velocities();
@@ -177,7 +176,7 @@ void run_sim() {
     if (dump_ite == 0) {
       dump_data(dump_counter++);
       dump_ite = dump_freq;
-      DBG("Dumping iteration " << i+1 << "/" << max_ite);
+      DBG("Dumping iteration " << ite+1 << "/" << max_ite);
     }
   }
   time_point end = now();
