@@ -25,7 +25,7 @@ if '--dt' in sys.argv:
 else:
     dt = '1.0e-4'
 
-bins = ['01_serial', '02_kokkos_1d_vec']
+bins = ['01_serial', '02_kokkos_1d_view']
 
 ic = os.path.join('..', ic)
 
