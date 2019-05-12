@@ -13,3 +13,5 @@ include_directories (${Kokkos_INCLUDE_DIRS_RET})
 
 add_subdirectory (01_serial)
 add_subdirectory (02_kokkos_1d_view)
+
+add_subdirectory (04_kokkos_1d_view_tmp_storage)
